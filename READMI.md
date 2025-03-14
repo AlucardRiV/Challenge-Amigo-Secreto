@@ -2,5 +2,5 @@
 - Estado de proyecto, en construccion
 
 - Se descargo repositorio base para programa
-- 
-- SE vinculo Visual Studio con Github para sincronizacion activa
+
+- Se vinculo Visual Studio con Github para sincronizacion activa
