@@ -1,5 +1,5 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-// Array para almacenar los nombres de los amigos
+// Lista para almacenar los nombres de los amigos
 let amigos = [];
 
 // Aqui agregaremos el nombre del "Amigo" en la lista
@@ -14,4 +14,18 @@ function agregarAmigo() {
     } else {
         alert("Por favor, ingresa un nombre válido."); // Alerta cuando el campo esta vacio
     }
+}
+// Con la siguiente linea debera actualizar los codigos
+
+// Se confirman cambios a traves de prueba y error en lineas, se consulta con alumnos del Curso de alula para tener un feedback mejor
+
+function actualizarListaAmigos() {
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = ""; // Limpia la lista actual
+
+    amigos.forEach((amigo) => {
+        const li = document.createElement('li'); //Confirmar una platica en equipo de consulta para entender correctamente funcion para futuras referencias
+        li.textContent = amigo;
+        listaAmigos.appendChild(li);
+    });
 }
