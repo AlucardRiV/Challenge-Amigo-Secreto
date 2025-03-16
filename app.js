@@ -29,3 +29,21 @@ function actualizarListaAmigos() {
         listaAmigos.appendChild(li);
     });
 }
+// Funcion para Elegir al Amigo Secreto de manera Aleatoria
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("No hay nombres en la lista."); // Si no se agrega ningun nombre manda mensaje de error
+        return;
+    }
+
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = "";
+
+    const indiceGanador = Math.floor(Math.random() * amigos.length); // Debera seleciconar el nombre de manera aleatoria
+    const ganador = amigos[indiceGanador]; // Nombre del ganador?
+
+    const li = document.createElement('li');
+    li.textContent = `¡El ganador es: ${ganador}!`; //Mensaje de felicitacion
+    resultado.appendChild(li);
+}
